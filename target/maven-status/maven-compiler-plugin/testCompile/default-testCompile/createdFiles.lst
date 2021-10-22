@@ -1,0 +1,14 @@
+com/unosquare/amazon/pom/pages/SupportForPage.class
+com/unosquare/amazon/pom/pages/SingInPage.class
+com/unosquare/amazon/restAssured/pages/BasePage.class
+com/unosquare/amazon/pageFactory/pages/BasePage.class
+com/unosquare/amazon/pageFactory/pages/CartPage.class
+com/unosquare/amazon/restAssured/pages/EmployeePage.class
+com/unosquare/amazon/restAssured/pages/PageInterface.class
+com/unosquare/amazon/pom/test/SignInTest.class
+com/unosquare/amazon/pageFactory/pages/ProductPage.class
+com/unosquare/amazon/Util/JSONReadFromFile.class
+com/unosquare/amazon/pom/pages/ConditionsUsePage.class
+com/unosquare/amazon/pageFactory/test/SearchProductTest.class
+com/unosquare/amazon/pageFactory/pages/ResultsSearchPage.class
+com/unosquare/amazon/pageFactory/pages/SearchPage.class

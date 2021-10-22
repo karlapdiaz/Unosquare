@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Fist Test Case for UNOSUARE" >
+    <test name="Amazon">
+        <classes>
+            <class name="com.unosquare.amazon.pageFactory.test.SearchProductTest"/>
+        </classes>
+    </test>
+</suite>

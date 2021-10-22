@@ -1,0 +1,18 @@
+{
+  "search_term": "Echo",
+  "select_title": "Echo support",
+  "sections": [
+    {
+    "title": "Getting Started"
+    },
+    {
+      "title": "Wi-Fi and Bluetooth"
+    },
+    {
+      "title": "Device Software and Hardware,"
+    },
+    {
+      "title": "TroubleShooting"
+    }
+  ]
+}
