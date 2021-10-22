@@ -25,3 +25,5 @@ hs_err_pid*
 /target/maven-status/
 /target/surefire-reports/
 /target/test-classes/
+.idea/
+
