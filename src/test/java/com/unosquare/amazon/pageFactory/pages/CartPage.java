@@ -18,7 +18,7 @@ public class CartPage extends BasePage{
 
     /**
      * Constructor to set webDriver
-     * @param webDriver
+     * @param webDriver webDriver web explorer driver
      */
     public CartPage(WebDriver webDriver) {
         super(webDriver);

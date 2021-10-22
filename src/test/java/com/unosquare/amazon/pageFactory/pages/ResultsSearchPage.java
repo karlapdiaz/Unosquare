@@ -20,7 +20,7 @@ public class ResultsSearchPage extends BasePage{
 
     /**
      * Contructor to set webDriver
-     * @param webDriver
+     * @param webDriver webDriver web explorer driver
      */
     public ResultsSearchPage(WebDriver webDriver) {
         super(webDriver);
@@ -36,7 +36,7 @@ public class ResultsSearchPage extends BasePage{
 
     /**
      * Method to get price of a item selected by position
-     * @param position
+     * @param position number on the list
      * @return price
      */
     public String getPriceOfResultList(int position){
@@ -47,7 +47,7 @@ public class ResultsSearchPage extends BasePage{
 
     /**
      * Method to select a product to see the details of it
-     * @param position
+     * @param position number on the list
      */
     public void clickOnProductFromList(int position){
         resultsList.get(position).findElement(By.tagName("a")).click();

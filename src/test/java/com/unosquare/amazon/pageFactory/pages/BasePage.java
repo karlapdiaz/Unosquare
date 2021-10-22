@@ -23,7 +23,7 @@ public abstract class BasePage {
 
     /**
      * Constructor to set webDriver
-     * @param webDriver
+     * @param webDriver web explorer driver
      */
     public BasePage(WebDriver webDriver) {
         this.webDriver = webDriver;

@@ -22,8 +22,8 @@ public class ConditionsUsePage {
 
     /**
      * Constructor of the class
-     * @param webDriver
-     * @param webDriverWait
+     * @param webDriver webDriver web explorer driver
+     * @param webDriverWait wait element for driver
      */
     public ConditionsUsePage(WebDriver webDriver, WebDriverWait webDriverWait) {
         this.webDriver = webDriver;
@@ -33,7 +33,7 @@ public class ConditionsUsePage {
 
     /**
      * Method to write the topic to know support
-     * @param topic
+     * @param topic phase to search support about
      */
     public void writeOnSearchBar(String topic){
         webDriverWait.until(visibilityOfElementLocated(searchBar));
@@ -44,7 +44,7 @@ public class ConditionsUsePage {
 
     /**
      * Method to select a topic result to see more details
-     * @param title
+     * @param title title desired to find
      */
     public void clickOnResult(String title){
         listResults = By.linkText("Echo Support");

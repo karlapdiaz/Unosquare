@@ -16,7 +16,7 @@ public class ProductPage extends BasePage{
 
     /**
      * Constructor to set webDriver
-     * @param webDriver
+     * @param webDriver webDriver web explorer driver
      */
     public ProductPage(WebDriver webDriver) {
         super(webDriver);

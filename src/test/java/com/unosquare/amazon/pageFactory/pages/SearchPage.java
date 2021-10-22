@@ -13,7 +13,7 @@ public class SearchPage extends BasePage {
 
     /**
      * Contructor to set webDriver
-     * @param webDriver
+     * @param webDriver webDriver web explorer driver
      */
     public SearchPage(WebDriver webDriver) {
         super(webDriver);
@@ -21,7 +21,7 @@ public class SearchPage extends BasePage {
 
     /**
      * Method to write a search product
-     * @param product
+     * @param product name of the product
      */
     public void writeProductoSearchbar(String product){
         searchInput.clear();

@@ -19,7 +19,7 @@ public class MyClass {
 
     /**
      * Method that search for the minimum number
-     * @param A
+     * @param A array of number
      * @return minumun number
      */
    public static int solution(int[] A){

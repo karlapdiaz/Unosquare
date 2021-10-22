@@ -21,7 +21,7 @@ public class BasePage implements PageInterface {
 
     /**
      * Method to get the response of url
-     * @param getPath
+     * @param getPath url of endpoint
      * @return response
      */
     public Response getResponse(String getPath) {
@@ -40,9 +40,9 @@ public class BasePage implements PageInterface {
 
     /**
      * Method to send information
-     * @param token
-     * @param postPath
-     * @param body
+     * @param token security key
+     * @param postPath url of endpoint
+     * @param body json to be sent
      * @return response
      */
     public Response postResponse(String token, String postPath,String body) {
@@ -64,9 +64,9 @@ public class BasePage implements PageInterface {
 
     /**
      * Method to insert information
-     * @param token
-     * @param postPath
-     * @param body
+     * @param token security key
+     * @param postPath url of endpoint
+     * @param body json to be sent
      * @return response
      */
     public Response putResponse(String token, String postPath,String body) {
@@ -88,9 +88,9 @@ public class BasePage implements PageInterface {
 
     /**
      * Method to update
-     * @param token
-     * @param postPath
-     * @param body
+     * @param token security key
+     * @param postPath url of endpoint
+     * @param body json to be sent
      * @return response
      */
     public Response patchResponse(String token, String postPath,String body) {
@@ -113,9 +113,9 @@ public class BasePage implements PageInterface {
 
     /**
      * Method to delete information
-     * @param token
-     * @param postPath
-     * @param body
+     * @param token security key
+     * @param postPath url of endpoint
+     * @param body json to be sent
      * @return response
      */
     public Response deleteResponse(String token, String postPath,String body) {

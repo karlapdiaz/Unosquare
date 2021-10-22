@@ -20,8 +20,8 @@ public class SupportForPage {
 
     /**
      * Constructor of the class
-     * @param webDriver
-     * @param webDriverWait
+     * @param webDriver wait element for driver
+     * @param webDriverWait wait element for driver
      */
     public SupportForPage(WebDriver webDriver, WebDriverWait webDriverWait) {
         this.webDriver = webDriver;
@@ -31,7 +31,7 @@ public class SupportForPage {
 
     /**
      * Method to validate if a title is on the topics of a support result
-     * @param title
+     * @param title phase to check match on results
      * @return is exist or not
      */
     public boolean existOptionOnTitlesResults(String title){

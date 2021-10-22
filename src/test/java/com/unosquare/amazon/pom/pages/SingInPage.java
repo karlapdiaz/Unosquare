@@ -26,8 +26,8 @@ public class SingInPage {
 
     /**
      * Constructor of the class
-     * @param webDriver
-     * @param webDriverWait
+     * @param webDriver webDriver web explorer driver
+     * @param webDriverWait wait element for driver
      */
     public SingInPage(WebDriver webDriver, WebDriverWait webDriverWait) {
         this.webDriver = webDriver;
@@ -57,8 +57,8 @@ public class SingInPage {
 
     /**
      * Method to write the customer name
-     * @param name
-     * @param lastName
+     * @param name of the customer
+     * @param lastName of the customer
      */
     public void enterNameOfCustomer(String name, String lastName){
         webDriverWait.until(visibilityOfElementLocated(inputName));
@@ -68,8 +68,8 @@ public class SingInPage {
 
     /**
      * Method to write the customer lastname
-     * @param name
-     * @param lastName
+     * @param name of the customer
+     * @param lastName of the customer
      * @return the email written
      */
     public String enterEmailOfCustomer(String name, String lastName){
