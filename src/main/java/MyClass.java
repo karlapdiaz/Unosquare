@@ -1,5 +1,8 @@
 import java.util.Arrays;
 
+/**
+ * Class to find the minimum number that it is not on the array
+ */
 public class MyClass {
 
     public static void main(String [] args){
@@ -14,6 +17,11 @@ public class MyClass {
 
     }
 
+    /**
+     * Method that search for the minimum number
+     * @param A
+     * @return minumun number
+     */
    public static int solution(int[] A){
        Arrays.sort(A);
        int min=A[0];
