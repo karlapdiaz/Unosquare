@@ -12,8 +12,8 @@ public class JSONReadFromFile {
 
     /**
      * Method to get a key from the json file
-     * @param file
-     * @param key
+     * @param file file name
+     * @param key key to search
      * @return key value
      */
     public static String readFileJson (String file, String key) {
@@ -25,13 +25,12 @@ public class JSONReadFromFile {
             JSONObject jsonObject = (JSONObject) obj;
 
             // A JSON array. JSONObject supports java.util.List interface.
-            String data = jsonObject.get(key).toString();
-            return data;
+            return jsonObject.get(key).toString();
 
         } catch (Exception e) {
             e.printStackTrace();
         }
 
-        return null;
+        return "";
     }
 }
