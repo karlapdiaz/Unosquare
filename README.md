@@ -11,7 +11,8 @@ The tests have dependencies so if one fails, the following ones will be skipped.
 
 To run it we can enter the following command in terminal:
 
-** mvn test -Dsuite=suiteFileName **
-Ex. mvn test -Dsuite=allTest
+**mvn test -Dsuite=suiteFileName**
 
-there are three suites in the project, to run the cases independently and to run both
+**Ex. mvn test -Dsuite=allTest**
+
+There are three suites in the project, to run the cases independently and to run both
