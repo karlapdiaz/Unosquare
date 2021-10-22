@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestSuite" time="20.127" tests="31" errors="0" skipped="1" failures="2">
+<testsuite name="TestSuite" time="10.614" tests="3" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="11.0.9.1+12-LTS"/>
@@ -30,7 +30,7 @@
     <property name="maven.conf" value="/usr/local/Cellar/maven/3.8.2/libexec/conf"/>
     <property name="jdk.debug" value="release"/>
     <property name="java.class.version" value="55.0"/>
-    <property name="suite" value="allTest"/>
+    <property name="suite" value="testCaseOne"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="os.version" value="10.16"/>
@@ -44,7 +44,7 @@
     <property name="java.class.path" value="/usr/local/Cellar/maven/3.8.2/libexec/boot/plexus-classworlds-2.6.0.jar"/>
     <property name="java.vm.specification.version" value="11"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test -Dsuite=allTest"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test -Dsuite=testCaseOne"/>
     <property name="java.home" value="/Library/Java/JavaVirtualMachines/amazon-corretto-11.jdk/Contents/Home"/>
     <property name="user.language" value="en"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
@@ -63,70 +63,7 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase name="validate_searchResults" classname="com.unosquare.amazon.pageFactory.test.SearchProductTest" time="3.083"/>
-  <testcase name="validate_priceOfItemSelected" classname="com.unosquare.amazon.pageFactory.test.SearchProductTest" time="1.81">
-    <failure message="no such window: window was already closed&#10;  (Session info: chrome=95.0.4638.54)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;MX-IT04014.local&apos;, ip: &apos;2806:2f0:7080:634:99ad:8382:e4b2:5797%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.16&apos;, java.version: &apos;11.0.9.1&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.54, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: /var/folders/d9/z9g2hfgs3lz...}, goog:chromeOptions: {debuggerAddress: localhost:65445}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: c3a9a0a25c1d48eb4c263003fb8dc9d0&#10;*** Element info: {Using=id, value=price_inside_buybox}" type="org.openqa.selenium.NoSuchWindowException">org.openqa.selenium.NoSuchWindowException: no such window: window was already closed
-  (Session info: chrome=95.0.4638.54)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'MX-IT04014.local', ip: '2806:2f0:7080:634:99ad:8382:e4b2:5797%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '11.0.9.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.54, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: /var/folders/d9/z9g2hfgs3lz...}, goog:chromeOptions: {debuggerAddress: localhost:65445}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: c3a9a0a25c1d48eb4c263003fb8dc9d0
-*** Element info: {Using=id, value=price_inside_buybox}
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
-	at org.openqa.selenium.By$ById.findElement(By.java:188)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy15.getText(Unknown Source)
-	at com.unosquare.amazon.pageFactory.pages.ProductPage.getPriceProduct(ProductPage.java:19)
-	at com.unosquare.amazon.pageFactory.test.SearchProductTest.validate_priceOfItemSelected(SearchProductTest.java:64)
-</failure>
-  </testcase>
-  <testcase name="validate_priceOfItemOnCart" classname="com.unosquare.amazon.pageFactory.test.SearchProductTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="exitWebDriver_Chrome" classname="com.unosquare.amazon.pageFactory.test.SearchProductTest" time="0.004">
-    <failure type="java.lang.NullPointerException:">java.lang.NullPointerException: null
-	at com.unosquare.amazon.pageFactory.test.SearchProductTest.exitWebDriver_Chrome(SearchProductTest.java:80)
-</failure>
-  </testcase>
-  <testcase name="testValidateGetAllEmployees" classname="com.unosquare.amazon.pom.test.SignInTest" time="1.535"/>
-  <testcase name="signInCustomer" classname="com.unosquare.amazon.pom.test.SignInTest" time="1.909"/>
-  <testcase name="fillFormNewCustomer" classname="com.unosquare.amazon.pom.test.SignInTest" time="0.338"/>
-  <testcase name="fillFormNewCustomer" classname="com.unosquare.amazon.pom.test.SignInTest" time="0.433"/>
-  <testcase name="fillFormNewCustomer" classname="com.unosquare.amazon.pom.test.SignInTest" time="0.271"/>
-  <testcase name="fillFormNewCustomer" classname="com.unosquare.amazon.pom.test.SignInTest" time="0.292"/>
-  <testcase name="fillFormNewCustomer" classname="com.unosquare.amazon.pom.test.SignInTest" time="0.271"/>
-  <testcase name="fillFormNewCustomer" classname="com.unosquare.amazon.pom.test.SignInTest" time="0.289"/>
-  <testcase name="fillFormNewCustomer" classname="com.unosquare.amazon.pom.test.SignInTest" time="0.274"/>
-  <testcase name="fillFormNewCustomer" classname="com.unosquare.amazon.pom.test.SignInTest" time="0.273"/>
-  <testcase name="fillFormNewCustomer" classname="com.unosquare.amazon.pom.test.SignInTest" time="0.277"/>
-  <testcase name="fillFormNewCustomer" classname="com.unosquare.amazon.pom.test.SignInTest" time="0.289"/>
-  <testcase name="fillFormNewCustomer" classname="com.unosquare.amazon.pom.test.SignInTest" time="0.263"/>
-  <testcase name="fillFormNewCustomer" classname="com.unosquare.amazon.pom.test.SignInTest" time="0.261"/>
-  <testcase name="fillFormNewCustomer" classname="com.unosquare.amazon.pom.test.SignInTest" time="0.271"/>
-  <testcase name="fillFormNewCustomer" classname="com.unosquare.amazon.pom.test.SignInTest" time="0.328"/>
-  <testcase name="fillFormNewCustomer" classname="com.unosquare.amazon.pom.test.SignInTest" time="0.366"/>
-  <testcase name="fillFormNewCustomer" classname="com.unosquare.amazon.pom.test.SignInTest" time="0.343"/>
-  <testcase name="fillFormNewCustomer" classname="com.unosquare.amazon.pom.test.SignInTest" time="0.323"/>
-  <testcase name="fillFormNewCustomer" classname="com.unosquare.amazon.pom.test.SignInTest" time="0.346"/>
-  <testcase name="fillFormNewCustomer" classname="com.unosquare.amazon.pom.test.SignInTest" time="0.306"/>
-  <testcase name="fillFormNewCustomer" classname="com.unosquare.amazon.pom.test.SignInTest" time="0.289"/>
-  <testcase name="fillFormNewCustomer" classname="com.unosquare.amazon.pom.test.SignInTest" time="0.288"/>
-  <testcase name="fillFormNewCustomer" classname="com.unosquare.amazon.pom.test.SignInTest" time="0.286"/>
-  <testcase name="fillFormNewCustomer" classname="com.unosquare.amazon.pom.test.SignInTest" time="0.302"/>
-  <testcase name="fillFormNewCustomer" classname="com.unosquare.amazon.pom.test.SignInTest" time="0.27"/>
-  <testcase name="openConditionsPage" classname="com.unosquare.amazon.pom.test.SignInTest" time="4.537"/>
+  <testcase name="validate_searchResults" classname="com.unosquare.amazon.pageFactory.test.SearchProductTest" time="2.842"/>
+  <testcase name="validate_priceOfItemSelected" classname="com.unosquare.amazon.pageFactory.test.SearchProductTest" time="3.298"/>
+  <testcase name="validate_priceOfItemOnCart" classname="com.unosquare.amazon.pageFactory.test.SearchProductTest" time="4.474"/>
 </testsuite>

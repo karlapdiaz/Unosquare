@@ -56,10 +56,10 @@ public class SearchProductTest {
 
     @Test(dependsOnMethods = {"validate_searchResults"})
     public void validate_priceOfItemSelected(){
-        price = resultsSearchPage.getPriceOfResultList(Integer.parseInt(JSONReadFromFile.readFileJson("searchProductParams","result_to_select")));
+        price = resultsSearchPage.getPriceOfResultList(Integer.parseInt(JSONReadFromFile.readFileJson("searchProductParams","result_to_select"))-1);
         productPage = new ProductPage(driver);
 
-        resultsSearchPage.clickOnProductFromList(Integer.parseInt(JSONReadFromFile.readFileJson("searchProductParams","result_to_select")));
+        resultsSearchPage.clickOnProductFromList(Integer.parseInt(JSONReadFromFile.readFileJson("searchProductParams","result_to_select"))-1);
 
         softAssert.assertEquals(price, productPage.getPriceProduct());
     }
@@ -76,7 +76,7 @@ public class SearchProductTest {
 
 
     @AfterClass
-    public void exitWebDriver_Chrome() throws Exception{
+    public void exitWebDriver_Chrome(){
         cartPage.deleteProductOnCart();
         driver.close();
     }
